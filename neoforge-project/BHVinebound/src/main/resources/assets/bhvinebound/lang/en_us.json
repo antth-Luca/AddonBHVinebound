@@ -1,5 +1,5 @@
 {
-  "itemGroup.bhvinebound": "Example Mod Tab",
-  "block.bhvinebound.example_block": "Example Block",
-  "item.bhvinebound.example_item": "Example Item"
+  "item.bhvinebound.vine_armor_seeds": "Goodfellow’s Vine Armor Seeds",
+  "item.bhvinebound.vine_armor_seeds.tooltip": "This seed, created by Goodfellow, grows alongside its host.",
+  "item.bhvinebound.vine_armor_seeds.effect_tooltip": "§6Efeito: §rOnce you eat it, it grows inside you to make you stronger."
 }

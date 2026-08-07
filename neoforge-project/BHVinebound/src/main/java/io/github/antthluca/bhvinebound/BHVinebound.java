@@ -1,5 +1,6 @@
-package io.github.antthluca;
+package io.github.antthluca.bhvinebound;
 
+import io.github.antthluca.bhvinebound.init.InitItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
@@ -9,6 +10,7 @@ public class BHVinebound {
     public static final String MODID = "bhvinebound";
 
     public BHVinebound(IEventBus bus, ModContainer container) {
-        // Existential void
+        // Init
+        InitItems.ITEMS.register(bus);
     }
 }

@@ -9,7 +9,7 @@ logoFile="logo.png"
 authors="antthLuca"
 description='''
 Blue hearts? Go further!
-Stay vinebound...
+Become vinebound...
 '''
 
 [[dependencies.${mod_id}]]
@@ -17,6 +17,13 @@ modId="neoforge"
 type="required"
 versionRange="[${neo_version},)"
 ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="blue_hearts"
+type="required"
+versionRange="[3.0,)"
+ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
