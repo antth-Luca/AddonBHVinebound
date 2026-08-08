@@ -136,6 +136,9 @@ dependencies {
     // implementation project(":myproject")
 
     implementation "curse.maven:blue-hearts-1161016:8577319"
+    implementation "curse.maven:puffish-skills-835091:8181025"
+    implementation "curse.maven:puffish-attributes-991341:7830516"
+    implementation "curse.maven:lootr-361276:7919278"
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

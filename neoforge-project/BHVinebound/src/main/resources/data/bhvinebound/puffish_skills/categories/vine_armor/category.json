@@ -1,0 +1,12 @@
+{
+  "title": "Goodfellow’s Vine Armor",
+  "icon": {
+    "type": "item",
+    "data": {
+      "block": "blue_hearts:vital_bush"
+    }
+  },
+  "background": "minecraft:textures/block/dirt_path_top.png",
+  "unlocked_by_default": false,
+  "spent_points_limit": 12
+}
