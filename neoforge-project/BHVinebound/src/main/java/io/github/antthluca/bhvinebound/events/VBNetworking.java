@@ -1,11 +1,14 @@
 package io.github.antthluca.bhvinebound.events;
 
 import io.github.antthluca.bhvinebound.BHVinebound;
+import io.github.antthluca.bhvinebound.handlers.AttachmentsHandler;
 import io.github.antthluca.bhvinebound.init.InitAttachmentTypes;
 import io.github.antthluca.bhvinebound.networking.packets.VineArmorDataSyncPayload;
 import net.minecraft.client.Minecraft;
+import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
@@ -30,5 +33,14 @@ public class VBNetworking {
                     });
                 }
         );
+    }
+
+    @SubscribeEvent
+    public static void onPlayerJoinWorld(EntityJoinLevelEvent event) {
+        if (!event.getLevel().isClientSide()) {
+            if (event.getEntity() instanceof ServerPlayer serverPlayer) {
+                AttachmentsHandler.syncVineArmor(serverPlayer);
+            }
+        }
     }
 }

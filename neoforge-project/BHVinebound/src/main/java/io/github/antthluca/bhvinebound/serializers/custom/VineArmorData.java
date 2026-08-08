@@ -6,6 +6,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.world.entity.player.Player;
 
 public record VineArmorData(boolean unlocked) {
     public static final MapCodec<VineArmorData> MAP_CODEC = RecordCodecBuilder.mapCodec(instance ->
@@ -32,11 +33,9 @@ public record VineArmorData(boolean unlocked) {
         return !unlocked;
     }
 
-    public VineArmorData setUnlocked() {
-        return new VineArmorData(true);
-    }
+    public VineArmorData setUnlocked(Player player) {
+        System.out.println("Skill Tree unlocked!");  // TODO: Trocar para o desbloqueio real;
 
-    public VineArmorData setLocked() {
-        return new VineArmorData(false);
+        return new VineArmorData(true);
     }
 }

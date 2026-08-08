@@ -4,34 +4,37 @@ import io.github.antthluca.bhvinebound.handlers.AttachmentsHandler;
 import io.github.antthluca.bhvinebound.init.InitAttachmentTypes;
 import io.github.antthluca.bhvinebound.serializers.custom.VineArmorData;
 import net.minecraft.ChatFormatting;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 
 import java.util.function.Consumer;
 
 public class GFVineArmorSeed extends Item {
-    private static final FoodProperties VINE_ARMOR_SEED_PROP = new FoodProperties.Builder()
-            .nutrition(0)
-            .saturationModifier(0)
-            .alwaysEdible()
-            .build();
-
     public GFVineArmorSeed(Properties props) {
         super(props
-                .food(VINE_ARMOR_SEED_PROP)
                 .stacksTo(1)
-                .rarity(Rarity.RARE));
+                .rarity(Rarity.RARE)
+                .component(
+                        DataComponents.CONSUMABLE,
+                        Consumable.builder()
+                                .animation(ItemUseAnimation.EAT)
+                                .build()
+                )
+        );
     }
 
     @Override
@@ -52,27 +55,64 @@ public class GFVineArmorSeed extends Item {
     }
 
     @Override
-    public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        VineArmorData data = player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR);
-        if (data.isLocked()) {
-            return super.use(level, player, hand);
-        }
+    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+        if (entity instanceof Player player) {
+            this.onConsumed(player);
+            if (player instanceof ServerPlayer serverPlayer) {
+                CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
+            }
 
-        return InteractionResult.PASS;
+            if (!player.getAbilities().instabuild) {
+                return ItemStack.EMPTY;
+            }
+        }
+        return stack;
     }
 
     @Override
-    public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
-        if (entity instanceof Player player) {
-            AttachmentsHandler.setAndSyncVineArmor(
-                    player,
-                    player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR)
-                            .setUnlocked()
-            );
+    public int getUseDuration(ItemStack itemStack, LivingEntity user) {
+        return 32;
+    }
 
-            return super.finishUsingItem(itemStack, level, entity);
+    @Override
+    public InteractionResult use(Level level, Player player, InteractionHand hand) {
+        if (this.canEat(player)) {
+            player.startUsingItem(hand);
+            return super.use(level, player, hand);
         }
 
-        return itemStack;
+        if (!level.isClientSide()) {
+            Vec3 playerPos = player.position();
+            level.playSound(
+                    null,
+                    playerPos.x, playerPos.y, playerPos.z,
+                    SoundEvents.PIGLIN_CONVERTED_TO_ZOMBIFIED,
+                    SoundSource.PLAYERS,
+                    0.4F, 2.0F
+            );
+            level.playSound(
+                    null,
+                    playerPos.x, playerPos.y, playerPos.z,
+                    SoundEvents.AZALEA_LEAVES_BREAK,
+                    SoundSource.PLAYERS,
+                    1.0F, 1.0F
+            );
+        }
+
+        player.getCooldowns().addCooldown(player.getItemInHand(hand), 20);
+        return InteractionResult.FAIL;
+    }
+
+    public boolean canEat(Player player) {
+        VineArmorData data = player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR);
+        return data.isLocked();
+    }
+
+    public void onConsumed(Player player) {
+        AttachmentsHandler.setAndSyncVineArmor(
+                player,
+                player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR)
+                        .setUnlocked(player)
+        );
     }
 }
