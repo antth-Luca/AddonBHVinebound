@@ -1,5 +1,6 @@
 package io.github.antthluca.bhvinebound;
 
+import io.github.antthluca.bhvinebound.init.InitAttachmentTypes;
 import io.github.antthluca.bhvinebound.init.InitItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -11,6 +12,7 @@ public class BHVinebound {
 
     public BHVinebound(IEventBus bus, ModContainer container) {
         // Init
+        InitAttachmentTypes.TYPES.register(bus);
         InitItems.ITEMS.register(bus);
     }
 }

@@ -20,16 +20,16 @@ import net.minecraft.world.level.Level;
 
 import java.util.function.Consumer;
 
-public class GFVineArmorSeeds extends Item {
-    private static final FoodProperties VINE_ARMOR_SEEDS_PROP = new FoodProperties.Builder()
+public class GFVineArmorSeed extends Item {
+    private static final FoodProperties VINE_ARMOR_SEED_PROP = new FoodProperties.Builder()
             .nutrition(0)
             .saturationModifier(0)
             .alwaysEdible()
             .build();
 
-    public GFVineArmorSeeds(Properties props) {
+    public GFVineArmorSeed(Properties props) {
         super(props
-                .food(VINE_ARMOR_SEEDS_PROP)
+                .food(VINE_ARMOR_SEED_PROP)
                 .stacksTo(1)
                 .rarity(Rarity.RARE));
     }
@@ -39,10 +39,10 @@ public class GFVineArmorSeeds extends Item {
         super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
         if (Minecraft.getInstance().hasShiftDown()) {
             builder.accept(
-                    Component.translatable("item.bhvinebound.vine_armor_seeds.tooltip")
+                    Component.translatable("item.bhvinebound.vine_armor_seed.tooltip")
                             .withStyle(ChatFormatting.GRAY));
             builder.accept(
-                    Component.translatable("item.bhvinebound.vine_armor_seeds.effect_tooltip")
+                    Component.translatable("item.bhvinebound.vine_armor_seed.effect_tooltip")
                             .withStyle(ChatFormatting.GRAY));
         } else {
             builder.accept(
@@ -55,7 +55,7 @@ public class GFVineArmorSeeds extends Item {
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         VineArmorData data = player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR);
         if (data.isLocked()) {
-            super.use(level, player, hand);
+            return super.use(level, player, hand);
         }
 
         return InteractionResult.PASS;

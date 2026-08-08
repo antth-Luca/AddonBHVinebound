@@ -1,5 +1,5 @@
 {
-  "item.bhvinebound.vine_armor_seeds": "Sementes de Armadura de Vinhas do Goodfellow",
-  "item.bhvinebound.vine_armor_seeds.tooltip": "Essa semente, concebida por Goodfellow, cresce junto de seu hospedeiro.",
-  "item.bhvinebound.vine_armor_seeds.effect_tooltip": "§6Efeito: §rApós ser consumida, cresce no seu interior para te fortalecer."
+  "item.bhvinebound.vine_armor_seed": "Semente de Armadura de Vinhas do Goodfellow",
+  "item.bhvinebound.vine_armor_seed.tooltip": "Essa semente, concebida por Goodfellow, cresce junto de seu hospedeiro.",
+  "item.bhvinebound.vine_armor_seed.effect_tooltip": "§6Efeito: §rApós ser consumida, cresce no seu interior para te fortalecer."
 }
