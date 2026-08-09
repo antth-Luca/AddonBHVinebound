@@ -1,0 +1,62 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [500, 1000, 2000, 4000, 8000, 10000, 12000, 16000, 20000, 22000]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:eat_food",
+      "data": {
+        "variables": {
+          "is_vital_fruit": {
+            "operations": [
+              {
+                "type": "get_eaten_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "blue_hearts:vital_fruit"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_vital_fruit",
+            "expression": "20"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:mine_block",
+      "data": {
+        "variables": {
+          "is_crop": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "#crops"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_crop",
+            "expression": "12"
+          }
+        ]
+      }
+    }
+  ]
+}

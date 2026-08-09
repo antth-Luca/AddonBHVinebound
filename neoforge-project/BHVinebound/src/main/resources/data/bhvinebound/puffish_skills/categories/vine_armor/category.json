@@ -3,7 +3,7 @@
   "icon": {
     "type": "item",
     "data": {
-      "block": "blue_hearts:vital_bush"
+      "item": "bhvinebound:vine_armor_seed"
     }
   },
   "background": "minecraft:textures/block/dirt_path_top.png",

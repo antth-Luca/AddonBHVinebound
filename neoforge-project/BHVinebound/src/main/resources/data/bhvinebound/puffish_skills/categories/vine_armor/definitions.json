@@ -1,0 +1,21 @@
+{
+  "root": {
+    "title": "Root",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:hanging_roots"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}
