@@ -3,7 +3,7 @@
   "item.bhvinebound.poisonous_vital_fruit.lore": "Após comer, vinhas contorcidas crescem de dentro do hospedeiro e cobrem o corpo dele.",
   "item.bhvinebound.poisonous_vital_fruit.effects": "§6Efeitos:§r",
   "item.bhvinebound.poisonous_vital_fruit.effect1": "- Você passa a queimar eternamente.",
-  "item.bhvinebound.poisonous_vital_fruit.effect2": "- Os danos que você causa são reduzidos em 50%.",
+  "item.bhvinebound.poisonous_vital_fruit.effect2": "- Os danos que você causa são reduzidos em 25%.",
   "item.bhvinebound.poisonous_vital_fruit.effect3": "- Desbloqueia uma árvore de habilidades.",
   "item.bhvinebound.poisonous_vital_fruit.effect4": "- Ao entrar na água, efeitos negativos são removidos."
 }

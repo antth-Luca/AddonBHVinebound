@@ -3,7 +3,7 @@
   "item.bhvinebound.poisonous_vital_fruit.lore": "After eating, twisted vines grow from inside the host and cover its body.",
   "item.bhvinebound.poisonous_vital_fruit.effects": "§6Effects:§r",
   "item.bhvinebound.poisonous_vital_fruit.effect1": "- You begin to burn eternally.",
-  "item.bhvinebound.poisonous_vital_fruit.effect2": "- The damage you deal is reduced by 50%.",
+  "item.bhvinebound.poisonous_vital_fruit.effect2": "- The damage you deal is reduced by 25%.",
   "item.bhvinebound.poisonous_vital_fruit.effect3": "- Unlocks a skill tree.",
   "item.bhvinebound.poisonous_vital_fruit.effect4": "- When you enter water, negative effects are removed."
 }
