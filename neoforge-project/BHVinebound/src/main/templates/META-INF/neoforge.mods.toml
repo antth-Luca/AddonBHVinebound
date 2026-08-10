@@ -41,13 +41,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="lootr"
-type="required"
-versionRange="[1.21.35.106,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="minecraft"
 type="required"
 versionRange="${minecraft_version_range}"

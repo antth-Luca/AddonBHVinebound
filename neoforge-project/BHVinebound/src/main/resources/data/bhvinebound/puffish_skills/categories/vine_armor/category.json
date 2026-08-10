@@ -3,7 +3,7 @@
   "icon": {
     "type": "item",
     "data": {
-      "item": "bhvinebound:vine_armor_seed"
+      "item": "bhvinebound:poisonous_vital_fruit"
     }
   },
   "background": "minecraft:textures/block/dirt_path_top.png",

@@ -12,7 +12,7 @@ public class VBBuildContents {
     @SubscribeEvent
     public static void onCreativeTabBuild(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == InitCreativeTabs.MAIN.getKey()) {
-              event.accept(InitItems.VINE_ARMOR_SEED.get());
+              event.accept(InitItems.POISONOUS_VITAL_FRUIT.get());
         }
     }
 }

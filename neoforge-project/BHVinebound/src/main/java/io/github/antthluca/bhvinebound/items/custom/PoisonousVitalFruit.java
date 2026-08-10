@@ -23,8 +23,8 @@ import net.minecraft.world.phys.Vec3;
 
 import java.util.function.Consumer;
 
-public class GFVineArmorSeed extends Item {
-    public GFVineArmorSeed(Properties props) {
+public class PoisonousVitalFruit extends Item {
+    public PoisonousVitalFruit(Properties props) {
         super(props
                 .stacksTo(1)
                 .rarity(Rarity.RARE)
@@ -42,12 +42,18 @@ public class GFVineArmorSeed extends Item {
         super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
         if (Minecraft.getInstance().hasShiftDown()) {
             builder.accept(
-                    Component.translatable("item.bhvinebound.vine_armor_seed.tooltip")
+                    Component.translatable("item.bhvinebound.poisonous_vital_fruit.effects")
                             .withStyle(ChatFormatting.GRAY));
-            builder.accept(
-                    Component.translatable("item.bhvinebound.vine_armor_seed.effect_tooltip")
+            for (int i = 1; i < 5; i++) {
+                builder.accept(
+                        Component.translatable("item.bhvinebound.poisonous_vital_fruit.effect" + i)
                             .withStyle(ChatFormatting.GRAY));
+            }
         } else {
+            builder.accept(
+                    Component.translatable("item.bhvinebound.poisonous_vital_fruit.lore")
+                            .withStyle(ChatFormatting.GRAY));
+            builder.accept(Component.empty());
             builder.accept(
                     Component.translatable("item.blue_hearts.common_tooltip")
                             .withStyle(ChatFormatting.GRAY));
@@ -86,7 +92,7 @@ public class GFVineArmorSeed extends Item {
             level.playSound(
                     null,
                     playerPos.x, playerPos.y, playerPos.z,
-                    SoundEvents.PIGLIN_CONVERTED_TO_ZOMBIFIED,
+                    SoundEvents.VILLAGER_NO,
                     SoundSource.PLAYERS,
                     0.4F, 2.0F
             );

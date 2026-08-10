@@ -13,7 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.puffish.skillsmod.api.SkillsAPI;
 
 public record VineArmorData(boolean unlocked) {
-    private static final Identifier VINE_ARMOR_CATEGORY = Identifier.fromNamespaceAndPath(BHVinebound.MODID, "vine_armor");
+    public static final Identifier VINE_ARMOR_CATEGORY = Identifier.fromNamespaceAndPath(BHVinebound.MODID, "vine_armor");
 
     public static final MapCodec<VineArmorData> MAP_CODEC = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
