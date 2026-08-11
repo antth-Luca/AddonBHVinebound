@@ -6,7 +6,7 @@
       "item": "bhvinebound:poisonous_vital_fruit"
     }
   },
-  "background": "minecraft:textures/block/dirt_path_top.png",
+  "background": "minecraft:textures/block/moss_block.png",
   "unlocked_by_default": false,
   "spent_points_limit": 12
 }
