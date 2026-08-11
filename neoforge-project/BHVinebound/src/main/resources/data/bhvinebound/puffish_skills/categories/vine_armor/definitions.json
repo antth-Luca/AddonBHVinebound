@@ -92,9 +92,9 @@
       "translate": "skills.bhvinebound.dam_reflect.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:invisibility"
       }
     },
     "rewards": [
@@ -118,7 +118,7 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "item": "minecraft:golden_sword"
       }
     },
     "rewards": [
@@ -140,9 +140,9 @@
       "translate": "skills.bhvinebound.stamina.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:saturation"
       }
     },
     "rewards": [
@@ -164,9 +164,9 @@
       "translate": "skills.bhvinebound.oxygen.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:water_breathing"
       }
     },
     "rewards": [
@@ -188,9 +188,9 @@
       "translate": "skills.bhvinebound.fall_reduction.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:slow_falling"
       }
     },
     "rewards": [
@@ -212,9 +212,9 @@
       "translate": "skills.bhvinebound.knockback_resistance.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:weakness"
       }
     },
     "rewards": [
@@ -238,7 +238,7 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "item": "minecraft:experience_bottle"
       }
     },
     "rewards": [
@@ -262,7 +262,7 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "item": "minecraft:diamond_pickaxe"
       }
     },
     "rewards": [
@@ -284,9 +284,9 @@
       "translate": "skills.bhvinebound.looting.description"
     },
     "icon": {
-      "type": "item",
+      "type": "effect",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "effect": "minecraft:luck"
       }
     },
     "rewards": [
@@ -310,7 +310,7 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:cherry_leaves"
+        "item": "minecraft:wooden_spear"
       }
     },
     "rewards": [
