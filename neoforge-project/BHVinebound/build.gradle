@@ -135,7 +135,7 @@ dependencies {
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
 
-    implementation "curse.maven:blue-hearts-1161016:8577319"
+    implementation "curse.maven:blue-hearts-1161016:8620826"
     implementation "curse.maven:puffish-skills-835091:8181025"
     implementation "curse.maven:puffish-attributes-991341:7830516"
 
