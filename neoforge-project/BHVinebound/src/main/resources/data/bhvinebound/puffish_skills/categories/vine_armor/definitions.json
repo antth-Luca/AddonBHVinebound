@@ -88,6 +88,9 @@
     "title": {
       "translate": "skills.bhvinebound.dam_reflect.title"
     },
+    "description": {
+      "translate": "skills.bhvinebound.dam_reflect.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -108,6 +111,9 @@
   "atk_speed": {
     "title": {
       "translate": "skills.bhvinebound.atk_speed.title"
+    },
+    "description": {
+      "translate": "skills.bhvinebound.atk_speed.description"
     },
     "icon": {
       "type": "item",
@@ -130,6 +136,9 @@
     "title": {
       "translate": "skills.bhvinebound.stamina.title"
     },
+    "description": {
+      "translate": "skills.bhvinebound.stamina.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -150,6 +159,9 @@
   "oxygen": {
     "title": {
       "translate": "skills.bhvinebound.oxygen.title"
+    },
+    "description": {
+      "translate": "skills.bhvinebound.oxygen.description"
     },
     "icon": {
       "type": "item",
@@ -172,6 +184,9 @@
     "title": {
       "translate": "skills.bhvinebound.fall_reduction.title"
     },
+    "description": {
+      "translate": "skills.bhvinebound.fall_reduction.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -192,6 +207,9 @@
   "knckbck_resistance": {
     "title": {
       "translate": "skills.bhvinebound.knockback_resistance.title"
+    },
+    "description": {
+      "translate": "skills.bhvinebound.knockback_resistance.description"
     },
     "icon": {
       "type": "item",
@@ -214,6 +232,9 @@
     "title": {
       "translate": "skills.bhvinebound.experience.title"
     },
+    "description": {
+      "translate": "skills.bhvinebound.experience.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -234,6 +255,9 @@
   "fortune": {
     "title": {
       "translate": "skills.bhvinebound.fortune.title"
+    },
+    "description": {
+      "translate": "skills.bhvinebound.fortune.description"
     },
     "icon": {
       "type": "item",
@@ -256,6 +280,9 @@
     "title": {
       "translate": "skills.bhvinebound.looting.title"
     },
+    "description": {
+      "translate": "skills.bhvinebound.looting.description"
+    },
     "icon": {
       "type": "item",
       "data": {
@@ -276,6 +303,9 @@
   "block_range": {
     "title": {
       "translate": "skills.bhvinebound.block_range.title"
+    },
+    "description": {
+      "translate": "skills.bhvinebound.block_range.description"
     },
     "icon": {
       "type": "item",
