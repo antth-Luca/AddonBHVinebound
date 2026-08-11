@@ -11,5 +11,24 @@
   "skills.bhvinebound.thorns_root.title": "Thorns",
   "skills.bhvinebound.adaptation_root.title": "Adaptation",
   "skills.bhvinebound.foliage_root.title": "Foliage",
-  "skills.bhvinebound.flowers_root.title": "Flowers"
+  "skills.bhvinebound.flowers_root.title": "Flowers",
+
+  "skills.bhvinebound.dam_reflect.title": "Damage Reflection",
+  "skills.bhvinebound.dam_reflect.description": "",
+  "skills.bhvinebound.atk_speed.title": "Attack Speed",
+  "skills.bhvinebound.atk_speed.description": "",
+  "skills.bhvinebound.stamina.title": "Stamina",
+  "skills.bhvinebound.stamina.description": "",
+  "skills.bhvinebound.oxygen.title": "Oxygen",
+  "skills.bhvinebound.oxygen.description": "",
+  "skills.bhvinebound.fall_reduction.title": "Fall Reduction",
+  "skills.bhvinebound.fall_reduction.description": "",
+  "skills.bhvinebound.knockback_resistance.title": "Resistance",
+  "skills.bhvinebound.knockback_resistance.description": "",
+  "skills.bhvinebound.experience.title": "Experience",
+  "skills.bhvinebound.experience.description": "",
+  "skills.bhvinebound.looting.title": "Looting",
+  "skills.bhvinebound.looting.description": "",
+  "skills.bhvinebound.block_range.title": "Block Range",
+  "skills.bhvinebound.block_range.description": ""
 }

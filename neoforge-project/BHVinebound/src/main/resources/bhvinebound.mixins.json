@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_21",
+  "package": "io.github.antthluca.bhvinebound.mixin",
+  "refmap": "additional_attributes.refmap.json",
+  "mixins": [
+    "VBEnchantmentHelperMixin"
+  ],
+  "client": [ ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

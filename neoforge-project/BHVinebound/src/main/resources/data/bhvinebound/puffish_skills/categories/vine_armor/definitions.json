@@ -1,5 +1,4 @@
 {
-  // Roots
   "main_root": {
     "title": {
       "translate": "skills.bhvinebound.root.title"
@@ -84,6 +83,215 @@
         "item": "minecraft:cherry_leaves"
       }
     }
+  },
+  "dam_reflect": {
+    "title": {
+      "translate": "skills.bhvinebound.dam_reflect.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:damage_reflection",
+          "value": 0.175,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "atk_speed": {
+    "title": {
+      "translate": "skills.bhvinebound.atk_speed.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:attack_speed",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "stamina": {
+    "title": {
+      "translate": "skills.bhvinebound.stamina.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 0.125,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "oxygen": {
+    "title": {
+      "translate": "skills.bhvinebound.oxygen.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:oxygen_bonus",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fall_reduct": {
+    "title": {
+      "translate": "skills.bhvinebound.fall_reduction.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 0.125,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "knckbck_resistance": {
+    "title": {
+      "translate": "skills.bhvinebound.knockback_resistance.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:knockback_resistance",
+          "value": 0.125,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "translate": "skills.bhvinebound.experience.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fortune": {
+    "title": {
+      "translate": "skills.bhvinebound.fortune.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fortune",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "looting": {
+    "title": {
+      "translate": "skills.bhvinebound.looting.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "bhvinebound:looting",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "block_range": {
+    "title": {
+      "translate": "skills.bhvinebound.block_range.title"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:block_interaction_range",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
   }
-  // Skills
 }
