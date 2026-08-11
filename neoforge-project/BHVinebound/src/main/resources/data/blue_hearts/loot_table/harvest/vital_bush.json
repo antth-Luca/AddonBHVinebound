@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:block_interact",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "bhvinebound:poisonous_vital_fruit",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "blue_hearts:vital_bush",
+                  "properties": {
+                    "age": "3"
+                  }
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.08
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "blue_hearts:vital_fruit",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "blue_hearts:vital_bush",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "blue_hearts:harvest/vital_bush"
+}
