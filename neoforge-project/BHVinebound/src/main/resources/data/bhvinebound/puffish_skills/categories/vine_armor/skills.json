@@ -1,8 +1,140 @@
 {
-  "root": {
-    "x": 0,
-    "y": 0,
-    "definition": "root",
-    "root": true
-  }
+	"ferds6gxxu7ejimp": {
+		"definition": "foliage_root",
+		"x": -22.627416997969522,
+		"y": -67.88225099390857,
+		"root": true
+	},
+	"bjqzpvkg7b0lpa43": {
+		"definition": "flowers_root",
+		"x": 67.88225099390857,
+		"y": -22.627416997969522,
+		"root": true
+	},
+	"f7auo06yitl8iuly": {
+		"definition": "adaptation_root",
+		"x": -67.88225099390857,
+		"y": 22.627416997969522,
+		"root": true
+	},
+	"mh61pmualgb0hg37": {
+		"definition": "thorns_root",
+		"x": 22.627416997969522,
+		"y": 67.88225099390857,
+		"root": true
+	},
+	"5s6npzkrsdt7uyci": {
+		"definition": "main_root",
+		"x": 90.50966799187809,
+		"y": -90.50966799187809,
+		"root": false
+	},
+	"1k8nfuxaligmb6as": {
+		"definition": "main_root",
+		"x": 67.88225099390857,
+		"y": -158.39191898578665,
+		"root": false
+	},
+	"6zizbfc6rxfcrtwj": {
+		"definition": "main_root",
+		"x": 22.627416997969522,
+		"y": -203.6467529817257,
+		"root": false
+	},
+	"hua3zfinuqgnqp2s": {
+		"definition": "main_root",
+		"x": -45.254833995939045,
+		"y": -226.27416997969522,
+		"root": false
+	},
+	"jsyqp16fyozhu3k8": {
+		"definition": "main_root",
+		"x": -90.50966799187809,
+		"y": -90.50966799187809,
+		"root": false
+	},
+	"l2h1qdawi9ir10e1": {
+		"definition": "main_root",
+		"x": -158.39191898578665,
+		"y": -67.88225099390857,
+		"root": false
+	},
+	"ubd5to5k6om66yd3": {
+		"definition": "main_root",
+		"x": -203.6467529817257,
+		"y": -22.627416997969522,
+		"root": false
+	},
+	"9nwi78ixtvekofg4": {
+		"definition": "main_root",
+		"x": -226.27416997969522,
+		"y": 45.254833995939045,
+		"root": false
+	},
+	"bmi0ft3mbw8386zm": {
+		"definition": "main_root",
+		"x": -90.50966799187809,
+		"y": 90.50966799187809,
+		"root": false
+	},
+	"olz8ot16aq583g69": {
+		"definition": "main_root",
+		"x": -67.88225099390857,
+		"y": 158.39191898578665,
+		"root": false
+	},
+	"3bvdq27hvto3t37y": {
+		"definition": "main_root",
+		"x": -22.627416997969522,
+		"y": 203.6467529817257,
+		"root": false
+	},
+	"9bv5hepholl96cd8": {
+		"definition": "main_root",
+		"x": 45.254833995939045,
+		"y": 226.27416997969522,
+		"root": false
+	},
+	"v8c2vn9x9wjwrcht": {
+		"definition": "main_root",
+		"x": 90.50966799187809,
+		"y": 90.50966799187809,
+		"root": false
+	},
+	"mn0leuk9wrup68ka": {
+		"definition": "main_root",
+		"x": 158.39191898578665,
+		"y": 67.88225099390857,
+		"root": false
+	},
+	"0fd4lxhgx8qal40k": {
+		"definition": "main_root",
+		"x": 203.6467529817257,
+		"y": 22.627416997969522,
+		"root": false
+	},
+	"vr967yb1kqpwoerg": {
+		"definition": "main_root",
+		"x": 226.27416997969522,
+		"y": -45.254833995939045,
+		"root": false
+	},
+	"88g76a7dsr59en05": {
+		"definition": "main_root",
+		"x": 0,
+		"y": -271.5290039756343,
+		"root": false
+	},
+	"zucvpghoq5zf05m4": {
+		"definition": "main_root",
+		"x": 0,
+		"y": -362.03867196751236,
+		"root": false
+	},
+	"cpsmmy0ax7t721pa": {
+		"definition": "main_root",
+		"x": 0,
+		"y": 0,
+		"root": true
+	}
 }

@@ -27,7 +27,7 @@
         "experience": [
           {
             "condition": "is_vital_fruit",
-            "expression": "20"
+            "expression": "12"
           }
         ]
       }
@@ -53,7 +53,7 @@
         "experience": [
           {
             "condition": "is_crop",
-            "expression": "12"
+            "expression": "5"
           }
         ]
       }
@@ -80,7 +80,7 @@
             ]
           }
         },
-        "experience": "dropped_xp + max_health / 20",
+        "experience": "dropped_xp + max_health / 4",
         "anti_farming": {
           "limit_per_chunk": 15,
           "reset_after_seconds": 300

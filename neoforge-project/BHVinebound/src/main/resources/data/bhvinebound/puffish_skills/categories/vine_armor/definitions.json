@@ -1,6 +1,9 @@
 {
-  "root": {
-    "title": "Root",
+  // Roots
+  "main_root": {
+    "title": {
+      "translate": "skills.bhvinebound.root.title"
+    },
     "frame": {
       "type": "advancement",
       "data": {
@@ -13,5 +16,74 @@
         "item": "minecraft:hanging_roots"
       }
     }
+  },
+  "thorns_root": {
+    "title": {
+      "translate": "skills.bhvinebound.thorns_root.title"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cactus"
+      }
+    }
+  },
+  "adaptation_root": {
+    "title": {
+      "translate": "skills.bhvinebound.adaptation_root.title"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:warped_fungus"
+      }
+    }
+  },
+  "foliage_root": {
+    "title": {
+      "translate": "skills.bhvinebound.foliage_root.title"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:azalea_leaves"
+      }
+    }
+  },
+  "flowers_root": {
+    "title": {
+      "translate": "skills.bhvinebound.flowers_root.title"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cherry_leaves"
+      }
+    }
   }
+  // Skills
 }

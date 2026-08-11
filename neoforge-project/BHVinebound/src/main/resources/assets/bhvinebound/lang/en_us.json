@@ -5,5 +5,11 @@
   "item.bhvinebound.poisonous_vital_fruit.effect1": "- You begin to burn eternally.",
   "item.bhvinebound.poisonous_vital_fruit.effect2": "- The damage you deal is reduced by 25%.",
   "item.bhvinebound.poisonous_vital_fruit.effect3": "- Unlocks a skill tree.",
-  "item.bhvinebound.poisonous_vital_fruit.effect4": "- When you enter water, negative effects are removed."
+  "item.bhvinebound.poisonous_vital_fruit.effect4": "- When you enter water, negative effects are removed.",
+
+  "skills.bhvinebound.root.title": "Root",
+  "skills.bhvinebound.thorns_root.title": "Thorns",
+  "skills.bhvinebound.adaptation_root.title": "Adaptation",
+  "skills.bhvinebound.foliage_root.title": "Foliage",
+  "skills.bhvinebound.flowers_root.title": "Flowers"
 }
