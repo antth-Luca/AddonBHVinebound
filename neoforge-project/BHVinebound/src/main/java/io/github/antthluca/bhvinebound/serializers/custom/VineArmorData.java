@@ -12,24 +12,22 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.puffish.skillsmod.api.SkillsAPI;
 
-public record VineArmorData(boolean unlocked, boolean visible) {
+public record VineArmorData(boolean unlocked) {
     public static final Identifier VINE_ARMOR_CATEGORY = Identifier.fromNamespaceAndPath(BHVinebound.MODID, "vine_armor");
 
     public static final MapCodec<VineArmorData> MAP_CODEC = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
-                    Codec.BOOL.fieldOf("unlocked").forGetter(VineArmorData::unlocked),
-                    Codec.BOOL.fieldOf("visible").forGetter(VineArmorData::visible)
+                    Codec.BOOL.fieldOf("unlocked").forGetter(VineArmorData::unlocked)
             ).apply(instance, VineArmorData::new)
     );
 
     public static final StreamCodec<ByteBuf, VineArmorData> STREAM_CODEC = StreamCodec.composite(
             ByteBufCodecs.BOOL, VineArmorData::unlocked,
-            ByteBufCodecs.BOOL, VineArmorData::visible,
             VineArmorData::new
     );
 
     public static VineArmorData getDefault() {
-        return new VineArmorData(false, true);
+        return new VineArmorData(false);
     }
 
     // Getters and Setters
@@ -43,22 +41,6 @@ public record VineArmorData(boolean unlocked, boolean visible) {
                     .ifPresent(cat -> cat.unlock(serverPlayer));
         }
 
-        return new VineArmorData(true, visible);
-    }
-
-    public boolean isVisible() { return visible; }
-
-    public boolean isInvisible() { return !visible; }
-
-    public VineArmorData setVisible() {
-        return new VineArmorData(unlocked, true);
-    }
-
-    public VineArmorData setInvisible() {
-        return new VineArmorData(unlocked, false);
-    }
-
-    public VineArmorData toggleVisibility() {
-        return new VineArmorData(unlocked, !visible);
+        return new VineArmorData(true);
     }
 }
