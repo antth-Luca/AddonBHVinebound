@@ -19,7 +19,7 @@ public record VineArmorDataSyncPayload(VineArmorData data) implements CustomPack
             );
 
     @Override
-    public Type<? extends CustomPacketPayload> type() {
+    public Type<VineArmorDataSyncPayload> type() {
         return TYPE;
     }
 }
