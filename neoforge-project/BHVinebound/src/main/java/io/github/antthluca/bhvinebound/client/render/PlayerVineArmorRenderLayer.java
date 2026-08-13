@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.entity.RenderLayerParent;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 
 public class PlayerVineArmorRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
@@ -26,11 +27,14 @@ public class PlayerVineArmorRenderLayer extends RenderLayer<AvatarRenderState, P
         Minecraft mc = Minecraft.getInstance();
         if (mc == null) return;
 
-        Player player = mc.player;
-        if (player == null) return;
+        Entity entity = mc.level.getEntity(state.id);
+        if (!(entity instanceof Player player)) return;
 
         VineArmorData data = player.getData(InitAttachmentTypes.PLAYER_VINE_ARMOR);
         if (data.isLocked()) return;
+
+        poseStack.pushPose();
+        poseStack.scale(1.05F, 1.05F, 1.05F);
 
         renderColoredCutoutModel(
                 getParentModel(),
@@ -42,5 +46,7 @@ public class PlayerVineArmorRenderLayer extends RenderLayer<AvatarRenderState, P
                 0xFFFFFF,
                 0
         );
+
+        poseStack.popPose();
     }
 }
