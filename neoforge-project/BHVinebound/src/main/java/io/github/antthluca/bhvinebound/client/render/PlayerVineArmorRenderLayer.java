@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 
 public class PlayerVineArmorRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
     public static final Identifier VINE_ARMOR_TEXTURE = Identifier.fromNamespaceAndPath(
@@ -34,7 +35,8 @@ public class PlayerVineArmorRenderLayer extends RenderLayer<AvatarRenderState, P
         if (data.isLocked()) return;
 
         poseStack.pushPose();
-        poseStack.scale(1.05F, 1.05F, 1.05F);
+        poseStack.scale(1.15F, 1.05F, 1.15F);
+        poseStack.translate(new Vec3(0, -0.015F, 0));
 
         renderColoredCutoutModel(
                 getParentModel(),
