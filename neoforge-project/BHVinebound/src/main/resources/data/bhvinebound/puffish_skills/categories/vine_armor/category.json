@@ -8,5 +8,5 @@
   },
   "background": "minecraft:textures/block/moss_block.png",
   "unlocked_by_default": false,
-  "spent_points_limit": 12
+  "spent_points_limit": 17
 }
